@@ -1,4 +1,4 @@
-package co.edu.unbosque.TestProject;
+package co.edu.unbosque.controller;
 
 import java.io.Reader;
 import java.net.URI;
@@ -11,6 +11,9 @@ import java.util.List;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
+
+import co.edu.unbosque.model.CsvTransfer;
+import co.edu.unbosque.model.Recibo;
 
 public class App {
     

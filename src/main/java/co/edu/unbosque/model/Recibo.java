@@ -1,4 +1,4 @@
-package co.edu.unbosque.TestProject;
+package co.edu.unbosque.model;
 
 import com.opencsv.bean.CsvBindByName;
 

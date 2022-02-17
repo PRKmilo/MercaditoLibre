@@ -1,4 +1,4 @@
-package co.edu.unbosque.TestProject;
+package co.edu.unbosque.model;
 
 import java.util.ArrayList;
 import java.util.List;
