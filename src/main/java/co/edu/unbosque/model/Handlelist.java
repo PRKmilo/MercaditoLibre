@@ -15,10 +15,11 @@ public class Handlelist {
 		lista=new Lista();
 		System.out.println("linea 14");
 		lista.setNum(aplication.readFromPath("csv/data.csv"));
-		System.out.println();
+		System.out.println(cantidadtotal()+"total venta ");
+		System.out.println(descriptionfac("581469"));
+		System.out.println(countByStockCode("22183"));
 		
-		cantidadtotal();
-		descriptionfac("581469");
+		
 	}
 	
 	
@@ -29,7 +30,7 @@ public class Handlelist {
 			res+=(Double.parseDouble(lista.getNum().get(i).getQuantity())*Double.parseDouble(lista.getNum().get(i).getUnitPrice()));
 			System.out.println("linea 25");
 		}
-		 System.out.println(res+" ESTA ES EL CANTIDAD TOTAL");
+		 
 		return res;
 	}
 	
@@ -47,11 +48,28 @@ public class Handlelist {
 			}
 			
 		}
-		System.out.println(id+"esta la descripcion de venta por numero de recibo ");
+	
 
 		return id;
 		
 	}
-	
+	public int countByStockCode(String b) {
+		int cantidad = 0;
+		
+		for(int i=1;i<lista.getNum().size();i++) {
+			
+			if (lista.getNum().get(i).getStockCode().equals(b)){
+				
+			int c = Integer.parseInt(lista.getNum().get(i).getQuantity());
+			cantidad+=c;
+			
+		}
+			
+		}
+		System.out.println(cantidad+ " Esta es la cantida vendida ");
+		return cantidad;
+		
+		
+	}
 	
 }
