@@ -2,6 +2,7 @@ package co.edu.unbosque.model;
 
 import java.util.List;
 
+import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 
 import co.edu.unbosque.controller.App;
@@ -16,7 +17,7 @@ public class Handlelist {
 		System.out.println("linea 14");
 		lista.setNum(aplication.readFromPath("csv/data.csv"));
 		System.out.println(cantidadtotal()+"total venta ");
-		System.out.println(descriptionfac("581469"));
+		descriptionfac("581469");
 		System.out.println(countByStockCode("22183"));
 		
 		
@@ -48,7 +49,8 @@ public class Handlelist {
 			}
 			
 		}
-	
+		JOptionPane.showMessageDialog(null, id);
+		System.out.println(id+" esta es la descripcion de venta en lin 53");
 
 		return id;
 		
