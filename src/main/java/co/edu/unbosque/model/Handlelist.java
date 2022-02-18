@@ -39,14 +39,11 @@ public class Handlelist {
 		for (int i=1;i<lista.getNum().size();i++) {
 			System.out.println("linea40");
 			System.out.println(lista.getNum().get(i).getInvoiceNo()+"este es el id del recibo");
-			if(lista.getNum().get(i).getInvoiceNo()==a) {
+			if(lista.getNum().get(i).getInvoiceNo().equals(a)) {
 				System.out.println("linea 42");
-				id +=lista.getNum().get(i).getDescription();
+				id +=lista.getNum().get(i).getDescription()+"\n";
 				System.out.println(lista.getNum().get(i).getInvoiceNo()+"="+id);
 				
-			}
-			else{
-				System.out.println("no se ha encotrado el id");
 			}
 			
 		}
