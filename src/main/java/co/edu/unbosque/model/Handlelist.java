@@ -1,6 +1,7 @@
 package co.edu.unbosque.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -110,9 +111,8 @@ public class Handlelist {
 				a.add(ind);
 			}
 		}
-		a.sort((o1, o2)
-                -> o1.getQuantity().compareTo(
-                    o2.getQuantity()));
+		sort2(a);
+		Collections.reverse(a);
 		for(Recibo arr: a) {
 			des += arr.getDescription()+" vendidos: "+ arr.getQuantity()+"\n";
 		}
