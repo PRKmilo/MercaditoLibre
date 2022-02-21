@@ -16,11 +16,21 @@ import co.edu.unbosque.model.CsvTransfer;
 import co.edu.unbosque.model.Handlelist;
 import co.edu.unbosque.model.Recibo;
 
+/**
+* App instanci una lista de tipo "Recibo" para leer el archivo csv.
+* @author Javier Villarreal, Camilo piza, Jorge yate, Camilo...
+*
+*/
 public class App {
 	
 	final static List<Recibo> nums = new ArrayList<Recibo>();
 	
-    
+
+    /**
+     * 
+     * @param localPath  String que tiene el nombre del archivo 
+     * @return arraylist lista con el archivo csv
+     */
     
 	public List<Recibo> readFromPath(String localPath) {
         try {
