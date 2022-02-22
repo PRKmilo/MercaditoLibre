@@ -12,6 +12,7 @@ public class AplMain {
 		System.out.println("Reading a CSV using OpenCSV library");
 
         Handlelist h=new Handlelist();
+        Controller c=new Controller();
    
         
 	}

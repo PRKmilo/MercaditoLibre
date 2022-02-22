@@ -17,18 +17,14 @@ public class Handlelist {
 		aplication=new App();
 		lista=new Lista();
 		System.out.println("linea 14");
-		lista.setNum(aplication.readFromPath("csv/dataprueba.csv"));
-		System.out.println(cantidadtotal()+"total venta ");
-		JOptionPane.showMessageDialog(null,descriptionfac("536365"));
-		System.out.println(countByStockCode("85123A"));
-		JOptionPane.showMessageDialog(null, avaragecountry("United Kingdom", "1", "2010"));
-		JOptionPane.showMessageDialog(null, avaregetotal());
-		JOptionPane.showMessageDialog(null,referencesearch("WHITE", "1", "2010"));
 		
 		
 		
 	}
 	
+	public void cargardata() {
+		lista.setNum(aplication.readFromPath("csv/dataprueba.csv"));
+	}
 	
 	public double cantidadtotal() {
 		double res=0.0;
