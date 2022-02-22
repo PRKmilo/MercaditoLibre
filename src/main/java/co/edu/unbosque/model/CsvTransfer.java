@@ -2,7 +2,12 @@ package co.edu.unbosque.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * guarda el archivo csv leido que esta contenido en una lista para setearlo 
+ * o tenerlo dentro del programa
+ * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
+ *
+ */
 public class CsvTransfer {
 
     private List<Recibo> csvList;

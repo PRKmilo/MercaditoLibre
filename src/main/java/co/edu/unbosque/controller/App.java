@@ -18,7 +18,7 @@ import co.edu.unbosque.model.Recibo;
 
 /**
 * App instanci una lista de tipo "Recibo" para leer el archivo csv.
-* @author Javier Villarreal, Camilo piza, Jorge yate, Camilo...
+* @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
 *
 */
 public class App {

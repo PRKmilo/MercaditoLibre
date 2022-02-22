@@ -2,7 +2,12 @@ package co.edu.unbosque.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *guarda una lista de tipo "Recibo" donde esta el archivo csv 
+ * o tenerlo dentro del programa 
+ * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
+ *
+ */
 public class Lista {
 	private List<Recibo> num;
 	/**

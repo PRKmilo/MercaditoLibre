@@ -11,7 +11,7 @@ import co.edu.unbosque.controller.App;
 /**
  * crea la lista con el documento y permite buscar referencias y precios
  * en el csv
- * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo...
+ * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
  *
  */
 public class Handlelist {

@@ -6,6 +6,10 @@ import co.edu.unbosque.model.Handlelist;
 import co.edu.unbosque.model.Recibo;
 
 public class AplMain {
+	/**
+	 * inistancio la clase Handlist para comenzar a usar la funcion
+	 * @param args 
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
