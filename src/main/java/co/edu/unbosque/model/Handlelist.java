@@ -65,13 +65,14 @@ public class Handlelist {
 	
 	public double avaragecountry(String Nation,String Mounth,String Year) {
 		double res=0.0;
+		String upnation=Nation.toUpperCase();
 		ArrayList<Double> a = new ArrayList();
 		for(Recibo ind: lista.getNum()) {
 			String[] arri=new String[2];
 			arri=ind.getInvoiceDate().split(" ");
 			String[] arr2=new String[3];
 			arr2=arri[0].split("/");
-			if(ind.getCountry().equals(Nation) && arr2[1].equals(Mounth) && arr2[2].equals(Year)) {
+			if(ind.getCountry().toUpperCase().equals(upnation) && arr2[1].equals(Mounth) && arr2[2].equals(Year)) {
 				a.add(Double.parseDouble(ind.getUnitPrice())+Double.parseDouble(ind.getQuantity()));
 			}
 		}
@@ -97,13 +98,14 @@ public class Handlelist {
     }
 	public String referencesearch(String Word,String Mounth,String Year) {
 		String des="";
+		String upword=Word.toUpperCase();
 		ArrayList<Recibo> a = new ArrayList();
 		for(Recibo ind:lista.getNum()) {
 			String[] arri=new String[2];
 			arri=ind.getInvoiceDate().split(" ");
 			String[] arr2=new String[3];
 			arr2=arri[0].split("/");
-			if(ind.getDescription().contains(Word) && arr2[1].equals(Mounth) && arr2[2].equals(Year)) {
+			if(ind.getDescription().contains(upword) && arr2[1].equals(Mounth) && arr2[2].equals(Year)) {
 				a.add(ind);
 			}
 		}
