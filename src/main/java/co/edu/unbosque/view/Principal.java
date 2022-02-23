@@ -101,7 +101,7 @@ public class Principal extends JFrame {
 		Sumastotales.setActionCommand(sumastotales);
 		Sumastotales.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, list.cantidadtotal()+"de libras  han  sido vendidos");
+				JOptionPane.showMessageDialog(null, list.cantidadtotal()+"pounds have been sold");
 			
 			}
 		});
@@ -113,7 +113,7 @@ public class Principal extends JFrame {
 		findByInvoiceNo.setFont(new Font("Tahoma", Font.BOLD, 9));
 		findByInvoiceNo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String code=JOptionPane.showInputDialog("ingrese el codigo del recibo");
+				String code=JOptionPane.showInputDialog("enter the code of the receipt");
 				JOptionPane.showMessageDialog(null,list.descriptionfac(code));
 				
 			}
@@ -126,7 +126,7 @@ public class Principal extends JFrame {
 		countByStockCode.setFont(new Font("Tahoma", Font.BOLD, 9));
 		countByStockCode.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String codestock=JOptionPane.showInputDialog("ingrese el codigo del producto");
+				String codestock=JOptionPane.showInputDialog("enter the code of the stock");
 				JOptionPane.showMessageDialog(null,list.countByStockCode(codestock));
 				       
 			}
@@ -139,9 +139,9 @@ public class Principal extends JFrame {
 		findPartiallyByDescription.setActionCommand(avgMonthlySales2);
 		findPartiallyByDescription.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String word=JOptionPane.showInputDialog("ingrese la palabra de referencia");
-				String mounth=JOptionPane.showInputDialog("ingrese el numero del mes");
-				String year=JOptionPane.showInputDialog("ingrese el año completo");
+				String word=JOptionPane.showInputDialog("put the reference word");
+				String mounth=JOptionPane.showInputDialog("enter the mounth as integer ");
+				String year=JOptionPane.showInputDialog("enter the year");
 				JOptionPane.showMessageDialog(null,list.referencesearch(word, mounth, year));
 				
 			}
@@ -151,7 +151,7 @@ public class Principal extends JFrame {
 		contentPane.add(findPartiallyByDescription);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\camil\\OneDrive\\Im\u00E1genes\\mercadoLibre.png"));
+		lblNewLabel.setIcon(new ImageIcon("images2/merca.png"));
 		lblNewLabel.setBounds(0, 165, 502, 98);
 		contentPane.add(lblNewLabel);
 		
@@ -160,7 +160,7 @@ public class Principal extends JFrame {
 		avgMonthlySales.setFont(new Font("Tahoma", Font.BOLD, 9));
 		avgMonthlySales.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String nation=JOptionPane.showInputDialog("Write the nation of the country");
+				String nation=JOptionPane.showInputDialog("Write the nation ");
 				String mounth=JOptionPane.showInputDialog("write the number of mounth as integer");
 				String year=JOptionPane.showInputDialog("write the complete year");
 				JOptionPane.showMessageDialog(null,list.avaragecountry(nation, mounth, year)+" es el promedio de ventas por el pais "+nation);
@@ -174,7 +174,7 @@ public class Principal extends JFrame {
 		Cargar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			list.cargardata();	
-			JOptionPane.showMessageDialog(null,"Data cargada" );
+			JOptionPane.showMessageDialog(null,"Loaded data" );
 			}
 		});
 		Cargar.setBounds(421, 230, 81, 33);

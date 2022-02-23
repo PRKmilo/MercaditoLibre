@@ -3,6 +3,8 @@ package co.edu.unbosque.controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JOptionPane;
+
 import co.edu.unbosque.view.Principal;
 
 /**
@@ -15,6 +17,7 @@ public class Controller  implements ActionListener {
 	private Principal vista;
 	public Controller() {
 		vista=new Principal();
+		JOptionPane.showMessageDialog(null, "Saludo, si acerca su visor a la parte inferior derecha"+"\n"+"vera el boton de cargar hoja csv");
 		vista.setVisible(true);
 	}
 	
