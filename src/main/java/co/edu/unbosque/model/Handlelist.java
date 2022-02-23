@@ -8,11 +8,19 @@ import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 
 import co.edu.unbosque.controller.App;
-
+/**
+ * crea la lista con el documento y permite buscar referencias y precios
+ * en el csv
+ * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
+ *
+ */
 public class Handlelist {
 	
 	private App aplication;
 	private Lista lista;
+	/**
+	 * crea la lista con el csv para que pueda ser utilizado
+	 */
 	public Handlelist() {
 		aplication=new App();
 		lista=new Lista();
@@ -21,10 +29,16 @@ public class Handlelist {
 		
 		
 	}
-	
+	/**
+	 * lee el contenido del archiv csv y lo coloca en setNum
+	 */
 	public void cargardata() {
 		lista.setNum(aplication.readFromPath("csv/dataprueba.csv"));
 	}
+	/**
+	 * Calcula el total de ventas de la tienda
+	 * @return suma total de ventas
+	 */
 	
 	public double cantidadtotal() {
 		double res=0.0;

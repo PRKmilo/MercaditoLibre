@@ -5,6 +5,12 @@ import java.awt.event.ActionListener;
 
 import co.edu.unbosque.view.Principal;
 
+/**
+ * crea los action lisener para el funcionamiento de los botones
+ * del interfas con el programa
+ * @author Javier Villarreal, Camilo piza, Jorge yate, Camilo Gomes
+ *
+ */
 public class Controller  implements ActionListener {
 	private Principal vista;
 	public Controller() {
